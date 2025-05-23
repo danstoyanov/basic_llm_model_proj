@@ -1,0 +1,51 @@
+# Игнориране на конкретен файл, който не искате да се бара от проекта
+Phi-3-mini-4k-instruct-q4.gguf
+
+# ===============================================
+# Общи игнорирани файлове за Python проекти
+# ===============================================
+
+# Компилирани Python файлове
+*.pyc
+__pycache__/
+*.pyd
+*.pyo
+
+# Виртуални среди (много важно да се игнорират!)
+venv/
+.venv/
+env/
+.env/
+
+# IDE и редакторски файлове
+.idea/           # PyCharm/IntelliJ project files
+*.iml            # PyCharm/IntelliJ module files
+.vscode/         # VS Code project files (може да искате да включите някои конфиг файлове, ако работите в екип, напр. settings.json, launch.json)
+.DS_Store        # macOS специфични файлове
+Thumbs.db        # Windows специфични файлове
+
+# Файлове за компилация и дистрибуция
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Файлове за тестове и покритие
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+
+# Лог файлове
+*.log
+*.log.*
+
+# Бази данни (често за SQLite)
+*.sqlite3
+db.sqlite3
+
+# Временни и други генерирани файлове
+*.bak
+*.swp
+*~
+*.tmp
